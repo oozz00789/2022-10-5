@@ -19,7 +19,7 @@ class CSphere {
 	}
 
 	double Cal_area() {
-		return ((int) (x * y * z ));
+		return ((int) (x * y + y * z + x * z )*2);
 	}
 }
 public class Class01	
