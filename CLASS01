@@ -1,0 +1,37 @@
+class CSphere {
+	private int x;
+	private int y;
+	private int z;
+	private int radius;
+
+	void setLocation(int a, int b, int c) {
+		x = a;
+		y = b;
+		z = c;
+	}
+
+	void setRadius(int r) {
+		radius = 10;
+	}
+
+	double surfaceArea() {
+		return 4 * 3.14159 * radius * radius * radius;
+	}
+
+	double Cal_area() {
+		return ((int) (x * y * z ));
+	}
+}
+public class Class01	
+{
+   public static void main(String args[])
+   {
+      CSphere cs=new CSphere();
+
+      cs.setLocation(4,5,6);
+      cs.setRadius(1);
+      System.out.println("球形體積="+cs.surfaceArea());
+      System.out.println();
+      System.out.println("立方體表面積 ="+cs.Cal_area());
+   }
+}
